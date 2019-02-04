@@ -1,8 +1,8 @@
-<?php include 'C:/xampp/htdocs/videoLibrary/PHP/headerT.php'; ?>
+<?php include_once '../PHP/headerT.php'; ?>
 
 <body>
 
-    <?php include_once 'C:/xampp/htdocs/videoLibrary/PHP/navbar.php'; ?>
+    <?php include_once '../PHP/navbar.php'; ?>
 
     <div class="container formCard">
         <div class="row">
@@ -59,6 +59,6 @@
         </div>
     </div>
 
-    <?php include_once 'C:/xampp/htdocs/videoLibrary/PHP/footer.php'; ?>
+    <?php include_once '../PHP/footer.php'; ?>
 
 

@@ -3,11 +3,11 @@ session_start();
 if (!isset($_SESSION["UserID"])) {
     header("Location: login.php");
 }
-include 'C:/xampp/htdocs/videoLibrary/PHP/headerT.php';
+include '../PHP/headerT.php';
 ?>
 
 <body>
-    <?php include_once 'C:/xampp/htdocs/videoLibrary/PHP/navbar.php'; ?>
+    <?php include_once '../PHP/navbar.php'; ?>
 
     <div class="container" id="wrapPVideo">
         <div class="row">
@@ -34,7 +34,7 @@ include 'C:/xampp/htdocs/videoLibrary/PHP/headerT.php';
         </div>
     </div>
 
-    <?php include_once 'C:/xampp/htdocs/videoLibrary/PHP/footer.php'; ?>
+    <?php include_once '../PHP/footer.php'; ?>
 
 
 

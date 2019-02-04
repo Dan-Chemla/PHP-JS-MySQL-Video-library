@@ -3,7 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/videoLibrary/CSS/styles.css</file>
+            <file>file:/C:/xampp/htdocs/videoLibrary/JS/index.js</file>
+            <file>file:/C:/xampp/htdocs/videoLibrary/HTML/editVideo.php</file>
+            <file>file:/C:/xampp/htdocs/videoLibrary/PHP/API.php</file>
+            <file>file:/C:/xampp/htdocs/videoLibrary/PHP/Video.php</file>
+            <file>file:/C:/xampp/htdocs/videoLibrary/HTML/register.php</file>
+            <file>file:/C:/xampp/htdocs/videoLibrary/HTML/login.php</file>
+            <file>file:/C:/xampp/htdocs/videoLibrary/HTML/playVideo.php</file>
+            <file>file:/C:/xampp/htdocs/videoLibrary/HTML/videoLibrary.php</file>
+            <file>file:/C:/xampp/htdocs/videoLibrary/index.php</file>
+            <file>file:/C:/xampp/htdocs/videoLibrary/PHP/navbar.php</file>
+            <file>file:/C:/xampp/htdocs/videoLibrary/PHP/BLL.php</file>
+            <file>file:/C:/xampp/htdocs/videoLibrary/PHP/footer.php</file>
+            <file>file:/C:/xampp/htdocs/videoLibrary/HTML/addVideo.php</file>
+            <file>file:/C:/xampp/htdocs/videoLibrary/PHP/DAL.php</file>
+            <file>file:/C:/xampp/htdocs/videoLibrary/PHP/headerT.php</file>
         </group>
     </open-files>
 </project-private>

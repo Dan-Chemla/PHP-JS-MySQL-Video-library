@@ -3,12 +3,12 @@ session_start();
 if (!isset($_SESSION["UserID"])) {
     header("Location: login.php");
 }
-include 'C:/xampp/htdocs/videoLibrary/PHP/headerT.php';
+include '../PHP/headerT.php';
 ?>
 
 <body  onload="getVideoByUser()">
     
-    <?php include_once 'C:/xampp/htdocs/videoLibrary/PHP/navbar.php'; ?>
+    <?php include_once '../PHP/navbar.php'; ?>
 
     <div id="wrapMyVideos" class=" container-fluid col-xs-offset-2 col-xs-8">
 
@@ -24,5 +24,5 @@ include 'C:/xampp/htdocs/videoLibrary/PHP/headerT.php';
 
     </div>
 
-    <?php include_once 'C:/xampp/htdocs/videoLibrary/PHP/footer.php'; ?>
+    <?php include_once '../PHP/footer.php'; ?>
 

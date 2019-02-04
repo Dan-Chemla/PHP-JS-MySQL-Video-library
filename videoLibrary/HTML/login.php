@@ -1,14 +1,14 @@
-<?php include 'C:/xampp/htdocs/videoLibrary/PHP/headerT.php'; ?>
+<?php include '../PHP/headerT.php'; ?>
 
 <body>
 
-    <?php include_once 'C:/xampp/htdocs/videoLibrary/PHP/navbar.php'; ?>
+    <?php include_once '../PHP/navbar.php'; ?>
 
     <div class="container formCard">
         <div class="row">
             <div class="col-md-12">
                 <div class="well well-sm">
-                    <form class="form-horizontal" action="http://localhost/videoLibrary/PHP/API.php" onsubmit="return validLogin()" method="post">
+                    <form class="form-horizontal" action="../PHP/API.php" onsubmit="return validLogin()" method="post">
                         <fieldset>
                             <legend class="text-center header">Login</legend>
 
@@ -38,6 +38,6 @@
         </div>
     </div>
 
-    <?php include_once 'C:/xampp/htdocs/videoLibrary/PHP/footer.php'; ?>
+    <?php include_once '../PHP/footer.php'; ?>
     
 

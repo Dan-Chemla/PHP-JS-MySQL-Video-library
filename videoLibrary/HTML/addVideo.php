@@ -4,18 +4,18 @@ if (!isset($_SESSION["UserID"])) {
     header("Location: login.php");
 }
 
- include 'C:/xampp/htdocs/videoLibrary/PHP/headerT.php';
+ include '../PHP/headerT.php';
 ?>
 
 <body>
 
-     <?php include_once 'C:/xampp/htdocs/videoLibrary/PHP/navbar.php'; ?>
+     <?php include_once '../PHP/navbar.php'; ?>
 
     <div class="container formCard">
         <div class="row">
             <div class="col-md-12">
                 <div class="well well-sm">
-                    <form class="form-horizontal" action="http://localhost/videoLibrary/PHP/API.php" onsubmit="return validAdd()" method="post">
+                    <form class="form-horizontal" action="../PHP/API.php" onsubmit="return validAdd()" method="post">
                         <fieldset>
                             <legend class="text-center header"><i class="fa fa-plus bigicon"></i> Add a Video <i class="fa fa-film bigicon"></i></legend>
                             <div class="form-group">
@@ -82,6 +82,6 @@ if (!isset($_SESSION["UserID"])) {
         </div>
     </div>
 
-   <?php include_once 'C:/xampp/htdocs/videoLibrary/PHP/footer.php'; ?>
+   <?php include_once '../PHP/footer.php'; ?>
 
     

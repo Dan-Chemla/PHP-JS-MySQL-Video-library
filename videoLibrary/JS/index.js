@@ -2,7 +2,7 @@ var ajax;
 function getVideoByUser() {
 
     ajax = new XMLHttpRequest();
-    var url = "http://localhost/videoLibrary/PHP/API.php?command=getVideosByUser";
+    var url = "../PHP/API.php?command=getVideosByUser";
     ajax.open("GET", url, true);
     ajax.onreadystatechange = handleResponse;
     ajax.send();
@@ -39,7 +39,7 @@ function createTable(videos) {
         var categoryTD = "<td>" + videos[i].CategoryName + "</td>";
         var descriptionTD = "<td>" + videos[i].Description + "</td>";
         //addig  buttons in the table for Play(redirect)/Edit(redirect)/Delete
-        var actionTD = "<td> <a class='btn btn-success btn-lg' role='button' href='http://localhost/videoLibrary/PHP/API.php?command=playVideo&videoID=" + videos[i].VideoID + "'><i class='fa fa-play'></i></a> <a class='btn btn-info btn-lg' role='button' href='editVideo.php?videoID=" + videos[i].VideoID + "&catname=" + videos[i].CategoryName + "'><i class='fa fa-edit'></i></a> <a class='btn btn-danger btn-lg' role='button' onclick=deleteVideo(" + videos[i].VideoID + ") ><i class='fa fa-trash'></i></a> </td>";
+        var actionTD = "<td> <a class='btn btn-success btn-lg' role='button' href='../PHP/API.php?command=playVideo&videoID=" + videos[i].VideoID + "'><i class='fa fa-play'></i></a> <a class='btn btn-info btn-lg' role='button' href='editVideo.php?videoID=" + videos[i].VideoID + "&catname=" + videos[i].CategoryName + "'><i class='fa fa-edit'></i></a> <a class='btn btn-danger btn-lg' role='button' onclick=deleteVideo(" + videos[i].VideoID + ") ><i class='fa fa-trash'></i></a> </td>";
         var videoTR = "<tr>" + titleTD + categoryTD + descriptionTD + actionTD + "</tr>";
         tableContent += videoTR;
     }
@@ -50,7 +50,7 @@ function createTable(videos) {
 function deleteVideo(videoID) {
     if (confirm("are you sure you want to delete this Video?")) {
         ajax = new XMLHttpRequest();
-        var url = "http://localhost/videoLibrary/PHP/API.php?command=deleteVideo&videoID=" + videoID;
+        var url = "../PHP/API.php?command=deleteVideo&videoID=" + videoID;
         ajax.open("GET", url, true);
         ajax.onreadystatechange = handleResponse;
         ajax.send();
@@ -63,7 +63,7 @@ function searchVideo() {
     var searchBox = document.getElementById("searchBox");
     var searchQ = searchBox.value;
     ajax = new XMLHttpRequest();
-    var url = "http://localhost/videoLibrary/PHP/API.php?command=searchVideo&searchQ=" + searchQ;
+    var url = "../PHP/API.php?command=searchVideo&searchQ=" + searchQ;
     ajax.open("GET", url, true);
     ajax.onreadystatechange = handleResponse;
     ajax.send();

@@ -1,15 +1,15 @@
 <?php
-require_once 'C:/xampp/htdocs/videoLibrary/PHP/BLL.php';
+require_once '../PHP/BLL.php';
 session_start();
 if (!isset($_SESSION["UserID"])) {
     header("Location: login.php");
 }
-include 'C:/xampp/htdocs/videoLibrary/PHP/headerT.php';
+include '../PHP/headerT.php';
 ?>
 
 <body>
 
-    <?php include_once 'C:/xampp/htdocs/videoLibrary/PHP/navbar.php'; ?>
+    <?php include_once '../PHP/navbar.php'; ?>
 
     <?php
     $videoID = $_GET["videoID"];
@@ -25,7 +25,7 @@ include 'C:/xampp/htdocs/videoLibrary/PHP/headerT.php';
         <div class='row'>
             <div class='col-md-12'>
                 <div class='well well-sm'>
-                    <form class='form-horizontal' action='http://localhost/videoLibrary/PHP/API.php' onsubmit='return validEdit()' method='post'>
+                    <form class='form-horizontal' action='../PHP/API.php' onsubmit='return validEdit()' method='post'>
                         <fieldset>
                             <legend class='text-center header'><i class='fa fa-edit bigicon'></i> Edit Video <i class='fa fa-film bigicon'></i></legend>
 
@@ -97,7 +97,7 @@ include 'C:/xampp/htdocs/videoLibrary/PHP/headerT.php';
 
 
 
-    include_once 'C:/xampp/htdocs/videoLibrary/PHP/footer.php';
+    include_once '../PHP/footer.php';
     ?>
 
 
